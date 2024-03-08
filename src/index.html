@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="./favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Image Finder</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form class="search-form" id="search-form">
+        <div class="search-form-wrapper">
+          <input
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+          />
+          <button class="submit-btn" type="submit">
+            <svg class="icon icon-search" width="24" height="24">
+              <use href="./icons.svg#icon-search"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+    <section class="gallery"></section>
+    <div class="load"><span class="loader is-hidden"></span></div>
+    <button class="up-btn is-hidden" type="button">
+      <i class="fa-regular fa-circle-up fa-bounce" style="color: #8a2be2"></i>
+    </button>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
